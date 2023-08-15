@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ]] -->
+    <title>Furniture App - Home</title>
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/indexStyle.css" />
+    <!-- File to render CSS in all browsers -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Fonts -->
+
+    <!-- Font Awesome lib to control icons .. optional ]] -->
+    <link rel="stylesheet" href="css/all.min.css" />
+  </head>
+  <body>
+    <!-- head section start ===> profile photo + navigation button -->
+    <div class="profile">
+      <img
+        src="images/person.jpg"
+        alt="person picture"
+        class="profile-photo"
+        name="customer-picture"
+      />
+      <div class="customer-welcome">
+        <h5>Welcome Back!</h5>
+        <h3 name="customer-name">Wade Warren</h3>
+      </div>
+    </div>
+    <button id="menu-icon" class="btn"><i class="fa fa-bars"></i></button>
+    <!-- head section end -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- search bar start -->
+    <div class="search-bar"></div>
+    <button id="search-icon" class="btn"><i class="fa fa-search"></i></button>
+    <input
+      type="text"
+      name="search-item"
+      placeholder="Search here..."
+      id="search-input"
+    />
+    <button id="search-filter" class="btn">
+      <img src="images/filter.png" alt="filter search results" />
+    </button>
+    <!-- search bar end -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- new items start -->
+    <h1 class="new-items-topic">New Items</h1>
+    <button id="view-all" class="btn">View All</button>
+    <div class="new-items">
+      <a href="#" class="new-item" id="itemNo1">
+        <img src="images/new1.png" alt="furniture item" name="newItemNo1" />
+      </a>
+      <a href="#" class="new-item" id="itemNo2">
+        <img src="images/new2.png" alt="furniture item" name="newItemNo2" />
+      </a>
+      <a href="#" class="new-item" id="itemNo3">
+        <img src="images/new3.png" alt="furniture item" name="newItemNo3" />
+      </a>
+      <a href="details.html" class="new-item" id="itemNo4">
+        <img src="images/new4.png" alt="furniture item" name="newItemNo4" />
+      </a>
+    </div>
+    <!-- new items end -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- navbar items start -->
+    <nav class="categories">
+      <ul class="categories-navbar">
+        <li>
+          <button class="btn nav-item category-chosen" id="chairs">
+            Chairs
+          </button>
+          <span class="line-visible" id="chairs-span"></span>
+        </li>
+        <li>
+          <button class="btn nav-item" id="tables">Tables</button>
+          <span id="tables-span"></span>
+        </li>
+        <li>
+          <button class="btn nav-item" id="sofas">sofas</button>
+          <span id="sofas-span"></span>
+        </li>
+        <li>
+          <button class="btn nav-item" id="lamps">lamps</button>
+          <span id="lamps-span"></span>
+        </li>
+        <li>
+          <button class="btn nav-item" id="pendants">pendants</button>
+          <span id="pendants-span"></span>
+        </li>
+        <li>
+          <button class="btn nav-item" id="beds">beds</button>
+          <span id="beds-span"></span>
+        </li>
+      </ul>
+    </nav>
+    <!-- navbar items end -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- detailed items start -->
+    <div class="detailed-items">
+      <!-- item no 1 start -->
+      <button class="btn item-card" id="chairs-itemNo1">
+        <a href="#"
+          ><img src="images/chair1.png" alt="chair" name="chairs-itemNo1-img"
+        /></a>
+        <div class="details" name="chairs-itemNo1-details">
+          <div
+            class="item-name"
+            id="chairs-itemNo1-name"
+            name="chairs-itemNo1-name"
+          >
+            Poliframe tuf...
+          </div>
+          <div
+            class="item-price"
+            id="chairs-itemNo1-price"
+            name="chairs-itemNo1-price"
+          >
+            $ 70.00
+          </div>
+        </div>
+        <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+      </button>
+      <!-- item no 1 end -->
+      <!-- item no 2 start -->
+      <button class="btn item-card" id="chairs-itemNo2">
+        <a href="#"
+          ><img src="images/chair2.png" alt="chair" name="chairs-itemNo2-img"
+        /></a>
+        <div class="details" name="chairs-itemNo2-details">
+          <div
+            class="item-name"
+            id="chairs-itemNo2-name"
+            name="chairs-itemNo2-name"
+          >
+            Poliframe tuf...
+          </div>
+          <div
+            class="item-price"
+            id="chairs-itemNo2-price"
+            name="chairs-itemNo2-price"
+          >
+            $ 115.00
+          </div>
+        </div>
+        <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+      </button>
+      <!-- item no 2 end -->
+      <!-- item no 3 start -->
+      <button class="btn item-card" id="chairs-itemNo3">
+        <a href="#"
+          ><img src="images/chair3.png" alt="chair" name="chairs-itemNo3-img"
+        /></a>
+        <div class="details" name="chairs-itemNo3-details">
+          <div
+            class="item-name"
+            id="chairs-itemNo3-name"
+            name="chairs-itemNo3-name"
+          >
+            Poliframe tuf...
+          </div>
+          <div
+            class="item-price"
+            id="chairs-itemNo3-price"
+            name="chairs-itemNo3-price"
+          >
+            $ 115.00
+          </div>
+        </div>
+        <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+      </button>
+      <!-- item no 3 end -->
+      <!-- item no 4 start -->
+      <button class="btn item-card" id="chairs-itemNo4">
+        <a href="#"
+          ><img src="images/chair4.png" alt="chair" name="chairs-itemNo4-img"
+        /></a>
+        <div class="details" name="chairs-itemNo4-details">
+          <div
+            class="item-name"
+            id="chairs-itemNo4-name"
+            name="chairs-itemNo4-name"
+          >
+            Poliframe tuf...
+          </div>
+          <div
+            class="item-price"
+            id="chairs-itemNo4-price"
+            name="chairs-itemNo4-price"
+          >
+            $ 115.00
+          </div>
+        </div>
+        <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+      </button>
+      <!-- item no 4 end -->
+      <!-- next item added to test the over flow -->
+      <!-- item no 5 start -->
+      <button class="btn item-card" id="chairs-itemNo5">
+        <a href="details.html"
+          ><img src="images/chair5.png" alt="chair" name="chairs-itemNo5-img"
+        /></a>
+        <div class="details" name="chairs-itemNo5-details">
+          <div
+            class="item-name"
+            id="chairs-itemNo5-name"
+            name="chairs-itemNo5-name"
+          >
+            Poliframe tuf...
+          </div>
+          <div
+            class="item-price"
+            id="chairs-itemNo5-price"
+            name="chairs-itemNo5-price"
+          >
+            $ 85.00
+          </div>
+        </div>
+        <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+      </button>
+      <!-- item no 5 end -->
+    </div>
+    <!-- detailed items end -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- tab bar start -->
+    <nav id="tab-bar">
+      <div class="navbar">
+        <a href="index.html" class="btn selected-btn navBtn" id="homeBtn">
+          <i class="fa fa-home"></i><span>home</span>
+        </a>
+        <a href="#wishlist" class="btn navBtn" id="wishlistBtn">
+          <i class="fa fa-heart"></i><span>wishlist</span>
+        </a>
+        <a href="checkout.html" class="btn navBtn" id="cartBtn">
+          <i class="fa fa-shopping-cart"></i><span>cart</span>
+        </a>
+        <a href="#user" class="btn navBtn" id="userBtn">
+          <i class="fa fa-user"></i><span>user</span>
+        </a>
+      </div>
+      <div id="bar"></div>
+    </nav>
+    <!-- tab bar end -->
+    <!-- ----------------------------------------------------------------- -->
+    <script src="js/index.js"></script>
+    <script src="js/checkout.js"></script>
+
+  </body>
+</html>

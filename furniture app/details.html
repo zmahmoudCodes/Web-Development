@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ]] -->
+    <title>Furniture App - Details</title>
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/detailsStyle.css" />
+    <!-- File to render CSS in all browsers -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Fonts -->
+
+    <!-- Font Awesome lib to control icons .. optional ]] -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- icons section start -->
+    <a href="index.html" class="btn" id="go-back">
+      <!-- <span class="material-symbols-outlined"> arrow_back_ios </span> -->
+      <i class="fas fa-chevron-left"></i>
+    </a>
+    <button class="btn" id="favorBtn">
+      <span class="material-symbols-outlined" id="favor"> favorite </span>
+    </button>
+    <!-- icons section end -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- product photos start -->
+    <div class="product-photo-big">
+      <img src="images/chair5.png" alt="chair" id="chair4" />
+    </div>
+    <div class="product-photo-small">
+      <div class="small-img">
+        <img src="images/chair5.png" alt="chair" id="chair5-small-img1" />
+      </div>
+      <div class="small-img">
+        <img src="images/chair5.png" alt="chair" id="chair5-small-img2" />
+      </div>
+      <div class="small-img">
+        <img src="images/chair5.png" alt="chair" id="chair5-small-img3" />
+      </div>
+      <div class="small-img">
+        <img src="images/chair5.png" alt="chair" id="chair5-small-img4" />
+      </div>
+    </div>
+    <!-- product photos end -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- product details start -->
+    <div class="product-name" id="chair4-name" name="chair4-name">
+      Cult 70’s Armchair, matte Chair.
+    </div>
+
+    <div class="stars">
+      <span class="material-symbols-outlined star fill-star"> star </span>
+      <span class="material-symbols-outlined star fill-star"> star </span>
+      <span class="material-symbols-outlined star fill-star"> star </span>
+      <span class="material-symbols-outlined star fill-star"> star </span>
+      <span class="material-symbols-outlined star"> star </span>
+    </div>
+    <span class="reviews"
+      >Review(<span id="chair5-reviews" name="chair5-reviews">96</span>)</span
+    >
+    <div class="price" id="chairPrice" name="chairPrice">$85.00</div>
+    <div class="colors">
+      <div id="color-title">Color</div>
+      <div class="colors-boxes">
+        <button class="color btn" id="color1"></button>
+        <button class="color btn" id="color2"></button>
+        <button class="color btn" id="color3"></button>
+      </div>
+    </div>
+    <!-- product details end -->
+
+    <!-- ----------------------------------------------------------------- -->
+    <!--     adding items start -->
+    <div class="adding-items">
+      <button class="control remove remove-itemNo4">
+        <i class="sign fa fa-minus"></i>
+      </button>
+      <div id="product-counts">5</div>
+      <button class="control add add-itemNo4">
+        <i class="sign fa fa-add"></i>
+      </button>
+    </div>
+    <!--    adding items end -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- footer start -->
+    <footer>
+      <div class="overall">Total : $<span id="total-price">420.00</span></div>
+      <button class="btn" id="add-to-cart">
+        <i class="fa fa-shopping-cart"></i><span>Add To Cart</span>
+      </button>
+    </footer>
+    <!--footer end -->
+    <!-- ----------------------------------------------------------------- -->
+    <script src="js/details.js"></script>
+  </body>
+</html>

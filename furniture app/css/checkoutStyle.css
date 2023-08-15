@@ -1,0 +1,316 @@
+/*details screen CSS file*/
+/*Start Variables*/
+
+
+/*********************************************/
+/*Start Global Rules*/
+*{
+    /* property with prefix for old browsers*/ 
+    /* -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; */
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    /*]] Font*/
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    width: 375px;
+    height: 812px;
+    background: #FFFFFF;
+}
+.btn{
+    padding: 0vw;
+    border:0;    
+    background: transparent;
+}
+.material-symbols-outlined {
+    /*change to 1 to fill the heart js*/
+    color: #404040;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 18
+}
+/*********************************************/
+
+/*Set media-queries to control width (if set in px) for different screens -- min-width from bootstrap 3*/
+/*Small screens*/
+@media (min-width:768px) {
+}
+/*Medium screens*/
+@media (min-width:992px) {
+   
+}
+/*Large screens*/
+@media (min-width:1200px) {
+  
+}
+/*End Global Rules*/
+/*********************************************************************************************/
+/*icons start*/
+#go-back i{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    top: 56px;
+    text-align: center;
+}
+.items{
+    position: absolute;
+    width: 57px;
+    height: 19px;
+    left: 302px;
+    top: 57px;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #535353;
+}
+.title{
+    position: absolute;
+    width: 343px;
+    height: 28px;
+    left: 16px;
+    top: 96px;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #535353;
+}
+/*icons end*/
+/*************************************************************************************/
+/*products chosen start*/
+.chosen-items-container{
+    position: absolute;
+    width: 343px;
+    height: auto;
+    max-height: 560px;
+    left: 16px;
+    top: 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:20px;
+    overflow-x: hidden;
+    /*change the following to auto if items more than 4*/
+    overflow-y: hidden;
+}
+.chosen-item{
+    width: 343px;
+    height: 120px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    border-radius: 3px;
+    position: relative;
+}
+.chosen-item img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 0;    
+}
+.item-name{
+    width: 183px;
+    height: 22px;
+    position: absolute;
+    top:12px;
+    left:140px;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.24px;
+    color: #535353;
+    text-transform: capitalize;
+    /*next to truncate long names and put the ..*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.item-color{
+    position: absolute;
+    width: 183px;
+    height: 17px;
+    left: 140px;
+    top: 38px;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.24px;
+    color: #8F8F8F;
+    text-transform: capitalize;
+}
+.item-counts{
+    position: absolute;
+    width: 183px;
+    height: 17px;
+    left: 140px;
+    top: 59px;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.24px;
+    color: #8F8F8F;
+}
+.item-price{
+    position: absolute;
+    width: 80px;
+    height: 19px;
+    left: 140px;
+    top: 81px;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.24px;
+    color: #6139FF;
+}
+
+.count-control{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 82px;
+    height: 20px;
+    left: 241px;
+    top: 80px;
+}
+.control {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    gap: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #535353;
+    border-radius: 3px;
+    flex: none;
+    flex-grow: 0;
+    background: transparent;
+    padding: 0;
+    text-align: center;
+}
+
+.control i {
+    width: 16px;
+    height: 16px;
+    color: #535353;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.control:active {
+    transition: .2s;
+    background-color: #6139FF;
+
+}
+
+.control i:active {
+    transition: 0.2s;
+    color: #FFFFFF;
+}
+.remove{
+    order: 0;
+}
+
+.add{
+    order: 2;
+}
+#item-counts{
+    width: 10px;
+    height: 19px;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.24px;
+    color: #535353;
+    order: 1;
+}
+/*products chosen end*/
+/*************************************************************************************/
+/*adding items start*/
+.final-overall{
+    position: absolute;
+    width: 113px;
+    height: 19px;
+    left: 16px;
+    top: 764px;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.24px;
+    color: #535353;
+}
+#checkout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 30px;
+    gap: 8px;
+    position: absolute;
+    width: 138px;
+    height: 43px;
+    left: 221px;
+    top: 750px;
+    background: #6139FF;
+    border-radius: 3px;
+}
+#checkout span{
+    width: 78px;
+    height: 17px;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.24px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-transform: uppercase;
+}
+#checkout:active{
+    transition: .2s;
+    background-color: #311c83;
+}
+/*footer end*/
+/*************************************************************************************/
+
+
+/*classes for js*/
+.hide {
+    transition: 1s;
+    display: none;
+}
