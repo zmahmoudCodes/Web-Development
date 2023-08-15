@@ -1,0 +1,1021 @@
+/*Main CSS file*/
+/*Start Variables*/
+
+
+/*********************************************/
+/*Start Global Rules*/
+
+*{
+    /* property with prefix for old browsers*/ 
+    /* -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; */
+    box-sizing: border-box;
+    width:100%;
+    background-color: #e9e7e7;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+body{
+    /*]] Font*/
+    font-family: sans-serif;
+}
+
+/*********************************************/
+/*Set media-queries to control width (if set in px) for different screens -- min-width from bootstrap 3*/
+/*Small screens*/
+@media (min-width:768px) {
+ .container{
+    width:60vw;
+ }   
+}
+/*Medium screens*/
+@media (min-width:992px) {
+    .container {
+        width: 900px;
+    }
+}
+/*Large screens*/
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+
+/*End Global Rules*/
+
+/*********************************************************************************/
+/*general themes*/
+/*the following container is a theme repeating throughout the website*/
+ .container {
+     width: 83.4%;
+     margin-left: 100px;
+     margin-right: 130px;
+     padding-left: 10px;
+     display: flex;
+     align-items: center;
+ }
+ 
+/* (.text) (.advert-text) & (.advert-img) to contain the text and image (repeated theme in the page) */
+.text{ 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 0;
+  background-color: transparent;
+}
+.advert-text {
+     width: 29.8611%;
+     height: 420px;
+     margin-right: 4.1667%;
+ }
+
+ .advert-img {
+     width: 45.8333;
+     height: 420px;
+     margin-right: 0.16667%;
+     margin-left: 4.1667%;
+ }
+
+ /*banners */
+ .banner{
+        width: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+ }
+
+ /*cards*/
+.cards{
+    display:flex;
+    justify-content: space-between;
+    padding:0;
+    
+}
+/*card class display general theme of image then heading then paragraph*/
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 0;
+    background-color: transparent;
+}
+/*To justify text to left and endlines in the same time*/
+p{
+    text-align: justify;
+    text-align-last: left;
+}
+/*********************************************************************************/
+
+/* navbar start */
+
+.navbar{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list{
+    width: 45%;
+    height: 16px;
+    display:flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.nav-btn{
+    text-decoration: none;
+    font-size: 21px;
+    letter-spacing: -1px;
+    color: #232323a8;
+    font-family: sans-serif;
+    text-align: left;
+}
+.selected{
+    font-weight: 900;
+    color: #232323;
+}
+.contact-btn{
+    width: 21.25%;
+    height: 54px;
+    border-radius: 5px;
+    background-color: none;font-size: 21px;
+    letter-spacing: -1px;
+    color: #232323;
+    font-weight: 900;
+    font-family:sans-serif;
+    text-align: center;
+    border: 3px solid #232323;
+    
+}
+/* navbar end */
+/*********************************************************************/
+/* advert1 start */
+/* This section contains a wide div (.bkg1) to include the random scratchs on sides 
++
+div (.Advert1) to contain the content and get the class container
++
+features of the content
+*/
+.bkg1{
+    width: inherit;
+    height:600px;
+    padding-bottom: 160px;
+    position: relative;
+    background-image: url("/minimalist-scrapbook-web-design-template/images/Scribble_Lightest.png") ,
+        url("/minimalist-scrapbook-web-design-template/images/Scribble\ Dark.png");
+    background-size:41.6667% 500px , 9.5833% 320px;
+    background-repeat: no-repeat;
+    background-position:  left bottom,right bottom;
+}
+
+.advert1{
+    display: flex;
+    background-color: transparent;
+}
+
+.advert-img img{
+    width: inherit;
+    height: inherit;
+}
+
+.advert-text h1{
+    width: inherit;
+    font-size: 6.1rem;
+    letter-spacing: -0.2rem;
+    line-height: 61px;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Cardo";
+    width:inherit;
+    /* height: 230px; */
+    margin: 0;
+    text-transform: capitalize;
+    background-color: transparent;
+
+}
+.advert-text p{
+    width: inherit;
+    font-size: 1.4rem;
+    letter-spacing: 0px;
+    color: #232323;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: left;
+    padding-right: 3.3333%;
+    background-color: transparent;
+}
+.advert-text button{
+    width: 59.535%;
+    height: 54px;
+    border-radius: 5px;
+    background-color: #232323;
+    font-size: 2.1rem;
+    letter-spacing: -0.1rem;
+    color: #e9e7e7;
+    font-weight: 900;
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+/* advert1 end */
+
+/***********************************************************/
+/*the first black banner start*/
+.banner1{
+    height:388px;
+    background-color: #232323;
+    background-image: url("/minimalist-scrapbook-web-design-template/images/Scribble_Light2.png"),url("/minimalist-scrapbook-web-design-template/images/Scribble_Light3.png");
+    background-size: 420px 175px, 503px 88px;
+    background-repeat: no-repeat;
+    background-position: top 55px left 0px, top 230px right 0px;
+}
+.banner1-text{
+    width:450px;
+    height:285px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+.banner1-text h1{
+    width:inherit;
+    height:91px;
+    text-align: center;
+    font-size: 47px;
+    letter-spacing: -1px;
+    line-height: 55px;
+    color: #e9e7e7;
+    font-weight: 700;
+    font-family: "Cardo";
+    margin:0;
+    background-color: transparent;
+}
+.banner1-text p{
+    width:439px;
+    height:57px;
+    background-color: transparent;
+    font-size: 15px;
+    letter-spacing: 0px;
+    color: #e9e7e7;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align-last: center;
+    margin: 0;
+}
+.banner1-text button{
+    width:257px;
+    height:55px;
+    border-radius: 5px;
+    background-color: #232323;
+    border: 3px solid #e9e7e7;
+    font-size: 21px;
+    letter-spacing: -1px;
+    color: #e9e7e7;
+    font-weight: 900;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+}
+/*the first black banner end*/
+
+/************************************************************************/
+/* cards (images + titles & captions) start */
+.banner2{
+    height:800px;
+    background-color: #e9e7e7;
+    background-image: url("/minimalist-scrapbook-web-design-template/images/ScribbleDark1.png"), url("/minimalist-scrapbook-web-design-template/images/ScribbleDark2.png");
+    background-size: 50px 620px, 75px 375px;
+    background-repeat: no-repeat;
+    background-position: top 0px left 0px, top 400px right 0px;
+}
+.cards1{
+    height:480px;
+    background-color: transparent;
+}
+.cards img{
+    width:inherit;
+    height:237px;
+}
+.card1{
+    width:370px;
+    height:475px;
+    
+}
+.tab{
+    width:53px;
+    height:1px;
+    background-color: #232323;
+    border: 2    px solid #232323;
+    margin:0px;
+}
+.card1 h3{
+    width:230px;
+    height:67px;
+    font-size: 30px;
+    letter-spacing: -1px;
+    line-height: 26px;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Cardo";
+        margin: 0px;
+}
+.card1 p{
+        width: 370px;
+        height: 77px;
+        font-size: 15px;
+        letter-spacing: 0px;
+        color: #232323;
+        font-weight: 400;
+        font-family: sans-serif;
+        margin: 0px;
+        
+}
+
+/* cards (images + titles & captions) end */
+/******************************************************************************/
+/*advert2 start   */
+/*contains banner for background,*/
+.advert2{
+height:1730px;
+background-color: #e9e7e7;
+background-image: url("/minimalist-scrapbook-web-design-template/images/ScribbleLightest.png"), url("/minimalist-scrapbook-web-design-template/images/ScribbleDarkSmall.png");
+background-size: 275px 900px, 425px 120px;
+background-repeat: no-repeat;
+background-position: top 73px right 0px, top 650px left 130px;
+position:relative;
+}
+.plane{
+    width:785px;
+    height:430px;
+    position: absolute;
+    left:330px;
+    top:230px;
+    background-color: transparent;
+    display:flex;
+    align-content: space-around;
+}
+.logo{
+    width:inherit;
+    position: relative;
+}
+.plane img{
+    position:absolute;
+    width:73px;
+    height:74px;
+    top:0px;
+    right:357px;
+}
+.plane h1{
+    width:777px;
+    height:210px;
+    font-size: 80px;
+    letter-spacing: -2px;
+    line-height: 98px;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Cardo";
+    text-align: center;
+    position:relative;
+    top:40px;
+}
+.plane h1 em{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+
+}
+#places{
+    width:inherit;
+    text-align: center;
+    margin-top: 0;
+    padding: 0vw;
+}
+#places span{
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: #232323;
+    font-weight: 900;
+    font-family: sans-serif;
+    text-align: center;
+}
+/*advert2 ends   */
+
+
+
+/*places to visit part (pics + header + paragraph + arrow) -- start*/
+
+.pics{
+    width:1380px;
+    height:870px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+.pics-content{
+    width:inherit;
+    height:inherit;
+    position:relative;
+}
+#river{
+    width:564px;
+    height:776px;
+    position: absolute;
+    bottom: 50px;
+    left:123px;
+}
+#tape {
+    width: 71px;
+    height: 254px;
+    position: absolute;
+    bottom: 316px;
+    left: 83px;
+    opacity: 0.902;
+    background-color: transparent;
+}
+#mountin {
+    width: 418px;
+    height: 322px;
+    position: absolute;
+    bottom: 504px;
+    /* bottom: calc(50px + (776px - 322px)); */
+    left: 729px;
+}
+.advert2-text{
+    width:600px;
+    height:240px;
+    column-count: 2;
+    column-gap: 50px;
+    background-color: transparent;
+    position: absolute;
+    left:729px;
+    bottom:190px;
+    padding: 0;
+    margin: 0;
+}
+.advert2-text h1{
+    width:236px;
+    height:235px;
+    display:inline-block;
+    font-size: 30px;
+    letter-spacing: -1px;
+    line-height: 40px;
+    text-decoration: underline;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Cardo";
+    break-inside: avoid;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+.advert2-text p{
+    width: 314px;
+    height: 175px;
+    display:inline-block;
+    /* break-inside: avoid; */
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #232323;
+    font-weight: 400;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+
+/* *Arrow* */
+.advert2 button {
+    width: 138px;
+    height: 60px;
+    position: absolute;
+    bottom: 100px;
+    right: 85px;
+    display: inline-flex;
+    align-items: center;
+    border:0;
+    
+}
+.go-btn{
+    width: 138px;
+    height: 60px;
+    position:relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.go-btn .arrow{
+    height:0;
+    border: solid #232323;
+    border-width: 0 3px 3px 0;
+    /* display: inline-block; */
+}
+.len{
+    width:128px;
+    position: absolute;
+    right: 2vw;
+    bottom: 78vw;
+}
+.rightU {
+    width:26px;
+    height:0px;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 0px;
+    bottom:63vw;
+}
+.rightD {
+    width: 26px;
+    height: 0px;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0px;
+    bottom: 93vw;
+}
+
+/*places to visit part (pics + header + paragraph + arrow) -- end*/
+
+/**************************************************************************************/
+
+/**************************************************************************************/
+/* the third banner start */
+.banner3{
+height:872px;
+background-color: #232323;
+background-image: url("/minimalist-scrapbook-web-design-template/images/ScribbleLight4.png");
+    background-size: 520px 120px;
+    background-repeat: no-repeat;
+    background-position:  left 0px bottom 0px;
+    position: relative;
+}
+
+.advert3-text{
+    position: absolute;
+    top:160px;
+    left: 115px;
+    height: 560px;
+    width:460px;
+    /* margin:0; */
+    background-color:transparent;
+    /* position:relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.sub-text{
+    width:inherit;
+    height:140px;
+    background-color: transparent;
+}
+
+.advert3-text h2{
+    margin:0;
+    width:inherit;
+    font-size: 45px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    background-color:transparent;
+    color: #e9e7e7;
+    font-weight: 700;
+    font-family: "Cardo";
+}
+.advert3-text h4 {
+    margin: 0;
+    width:230px;
+    height: 19px;
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: #e9e7e7;
+    font-weight: 900;
+    background-color: transparent;
+    font-family: sans-serif;
+}
+.advert3-text p {
+    margin: 0;
+    width: inherit;
+    height: 20px;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #e9e7e7;
+    font-weight: 400;
+    font-family: sans-serif;
+    background-color: transparent;
+}
+
+.advert3 img{
+    width:757px;
+    height:562px;
+    position: absolute;
+    right:0;
+    top:160px;
+}
+/* the third banner end */
+/**************************************************************************************/
+
+
+
+
+
+
+/**************************************************************************************/
+/* lines section start */
+.lines-banner{
+    height:960px;
+    background-color: #e9e7e7;
+}
+.lines-container{
+    height:515px;
+   position: relative;
+}
+.lines-container img{
+    width:393px;
+    height: inherit;
+    position: absolute;
+    right:0;
+}
+.lines-text{
+    width: 740px;
+    height: inherit;
+    position: absolute;
+    left:0;
+    justify-content: left;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.lines-text h1{
+    width: 740px;
+    height:150px;
+    font-size: 65px;
+    letter-spacing: -1px;
+    margin: 0;
+    padding: 0;
+    line-height: 62px;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Cardo";
+}
+.lines{
+    height:265px;
+    width: 740px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.lines pre,.lines hr{
+    width: 740px;
+    color: #232323;
+    font-weight: 400;
+    margin: 0;
+}
+.lines-text pre {
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-family: "Lato";
+    text-align: left;
+    
+}
+.lines button{
+    width:auto;
+    border: 0;
+}
+/* lines section end */
+/**************************************************************************************/
+/* opinions section start */
+.opinions-banner {
+    height: 780px;
+    background-color: #e9e7e7;
+    background-image: url("/minimalist-scrapbook-web-design-template/images/Scribble\ Dark-3.png"), url("/minimalist-scrapbook-web-design-template/images/Scribble\ Dark-1.png");
+    background-size: 330px 180px, 400px 80px;
+    background-repeat: no-repeat;
+    background-position: top 0px left 0px, top 680px right 0px;
+    position:relative;
+}
+.opinions-h{
+width:625px;
+height:175px;
+position:absolute;
+left:410px;
+top:60px;
+font-size: 68px;
+letter-spacing: -2px;
+line-height: 81px;
+color: #232323;
+font-weight: 700;
+font-family: "Cardo";
+text-align: center;
+
+}
+.opinions-container{
+    background-color: transparent;
+    width: 1215px;
+    height: 430px;
+    display:inline-flex;
+    justify-content: space-between;
+    position: absolute;
+    top:280px;
+}
+.opinion{
+    width: 389px;
+    height: 424px;
+    border-radius: 10px;
+background-color: #e9e7e7;
+    border: 3px solid #232323;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.person-bkg{
+    width: 135px;
+    height: 135px;
+    border-radius: 68px;
+    background-color: #232323;
+    display: flex;
+    justify-content: center;
+       position: relative;
+}
+.opinionT{
+    width:310px;
+    background-color: transparent;
+}
+.opinionT h3{
+    width: 310px;
+    height: 20px;
+    font-size: 25px;
+    letter-spacing: -1px;
+    color: #232323;
+    font-weight: 900;
+    font-family: "Lato";
+    text-align: center;
+        background-color: transparent;
+
+}
+.opinionT p{
+    width: 310px;
+    height: 55px;
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #6d6d6d;
+        background-color: transparent;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: justify;
+}
+.person-bkg img{
+    width: 100px;
+    height: 149px;
+    border-radius: 21px;
+    background-color: transparent;
+    position: absolute;
+    top:30px;
+    border-color:#e9e7e7;
+}
+.opinion-arrow{
+    width: 83px;
+    height: 73px;
+    border-radius: 10px;
+    background-color: #e9e7e7;
+    border: 3px solid #232323;
+    z-index: 2;
+    position: absolute;
+    top: 445px;
+    font-weight: 100;
+    font-size: 55px;
+    align-content: center;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#232323;
+}
+.opinion-arrow button , .opinion-arrow span{
+    background-color: transparent;
+    border:0;
+
+}
+#arrowL{
+    left:70px;
+}
+#arrowR {
+    right: 70px;
+}
+/* opinions section end */
+
+/* updates section start */
+.updates-banner {
+    height: 1070px;
+    background-color: #e9e7e7;
+}
+.updates{
+    width:1220px ;
+    height:735px ;
+    position: relative;
+}
+.updates img{
+    width: 666px;
+    height: 735px;
+    position: absolute;
+    right:0;
+}
+
+.updates-form{
+    width: 455px;
+    height: 735px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.updates-form h1, .updates-form form, .updates-form label{
+width:inherit;
+}
+.updates-form h1{
+    font-size: 68px;
+    letter-spacing: -2px;
+    line-height: 81px;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Cardo";
+    margin:0;
+}
+.updates-form form{
+    height:600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#firstName, #lastName, #email, #comments, #submissionBtn{
+    width:454px;
+    height: 58px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border:3px solid #232323;
+    font-size: 21px;
+    line-height: 17px;
+    color: #232323;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+#comments{
+    height: 220px;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+#submissionBtn{
+    height: 66px;
+    font-size: 25px;
+    color: #e9e7e7;
+    text-align: center;
+    background-color: #232323;
+}
+/* updates section end */
+
+
+
+/**********************************************************************************/
+/**try*/
+.footer{
+    height: 575px;
+    background-color: #c4c4c4;
+    background-image: url("/minimalist-scrapbook-web-design-template/images/lastpic.png");
+    background-size: 465px 147px;
+    background-repeat: no-repeat;
+    background-position: bottom 40px left 0px;
+    position: relative;
+}
+
+.footer h1{
+    width: 225px;
+    height: 115px;
+    display:inline-block;
+    position: absolute;
+    top:110px;
+    left:115px;
+    font-size: 45px;
+    letter-spacing: -2px;
+    line-height: 63px;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Cardo";
+    text-align: center;
+    background-color: transparent;
+}
+.links{
+    width: 840px;
+    height:195px;
+    position: absolute;
+    top:110px;
+    right:140px ;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+.links h4{
+    width: 125px;
+    height: 25px;
+    font-size: 21px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #232323;
+    font-weight: 900;
+    font-family: "Lato";
+        background-color: transparent;
+}
+.ls{
+    width: 840px;
+    height: 130px;
+    background-color: transparent;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-auto-flow: row;
+    /* grid-template-areas: home travels recomm mission, about flights guides team, logs routes blogs contact; */
+    justify-content: space-between;
+}
+/* #HomeIcon{
+    grid-area: home;
+}
+#aboutIcon {
+    grid-area: about;
+}
+#travelLogsIcon {
+    grid-area: logs;
+}
+#TravelsIcon {
+    grid-area: travels;
+}
+#flightsIcon {
+    grid-area: flights;
+}
+#routesIcon {
+    grid-area: routes;
+}
+#recommendationsIcon {
+    grid-area: recomm;
+}
+#guidesIcon {
+    grid-area: guides;
+}
+#blogsIcon {
+    grid-area: blogs;
+}
+#missionIcon {
+    grid-area: mission;
+}
+#teamIcon {
+    grid-area: team;
+}
+#contactIcon {
+    grid-area: contact;
+} */
+.ls a{
+    text-decoration: none;
+    width:140px;
+    height:20px;
+    font-size: 18px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #232323;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: left;
+    background-color: transparent;
+}
+.copyright{
+    width:420px ;
+    height:20px ;
+    position: absolute;
+    bottom:125px ;
+    left: 515px;
+    font-size: 18px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #232323;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: transparent;
+}
+/**************************************************************************************/

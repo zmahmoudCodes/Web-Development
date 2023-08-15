@@ -1,0 +1,18 @@
+@forward "./layout";
+
+body{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+@include desktop{
+    width: 83.333%;
+        margin-left: 6.944%;
+        margin-right: 9.028%;
+        padding-left: 0.6944%;
+}
+
+
+}
